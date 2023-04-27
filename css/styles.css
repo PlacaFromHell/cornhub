@@ -1,6 +1,16 @@
 /* Estilos para la navegación */
-* {margin:0; padding:0; box-sizing: border-box; background-color: black; font-family: Helvetica;}
+* {margin:0; padding:0; box-sizing: border-box; background-color: black; font-family: Helvetica;} 
 
+body{
+	margin: 0;
+	padding: 0;
+   }
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
 
 .header {
 	color:#ddd;
@@ -10,15 +20,20 @@
 .logo {
 	border-color: rgb(14, 14, 14);
 	background-color: rgb(14, 14, 14);
-	width: 14rem;
+	width: 10rem;
+	max-width: 30vw;
+	margin-left: 8vw;
+	margin-right: 10px;
 }
 
 .auxbar {
 	border-color: rgb(14, 14, 14);
 	background-color: rgb(14, 14, 14);
 	display: flex;
-	padding-left: 10%;
+
 	align-items: center;
+	flex-wrap: nowrap;
+	overflow-x: auto;
 }
 
 .buscador {
@@ -48,9 +63,10 @@
 	border-style: none;
 	border-radius: 2px;
 	width: 200%;
+	min-width: 40vw;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	padding-right: 100px;
+	
 }
 
 .barra:focus {
@@ -58,28 +74,30 @@
 	outline: none;
 }
 
-nav {
-	border-color: rgb(14, 14, 14);
-	border: 1px solid;
+.navegacion {
+	margin-top: 1px;
 	background-color: rgb(14, 14, 14);
 	overflow: hidden;
 	width: 100%;
 	padding-left: 9%;
 	padding-right: 5%;
+	font-family: Helvetica !important;
 }
-nav a {
+.navegacion a {
 	float: left;
 	color: white;
 	text-align: left;
-	padding: 14px 16px;
+	padding: 10px 16px;
 	text-decoration: none;
 	display: block;
 	padding-left: 5%;
 	padding-right: 5%;
 	background-color: rgb(14, 14, 14);
+	font-family: Helvetica !important;
+	font-weight: bold;
 }
 
-nav form {
+.navegacion form {
 	float: right;
 	margin-top: 10px;
 	margin-right: 10px;
@@ -87,7 +105,7 @@ nav form {
 	margin-right: 10%; 
 }
 
-nav a:hover {
+.navegacion a:hover {
 	background-color: #FFA31A;
 	color: black;
 }
@@ -96,12 +114,11 @@ nav a:hover {
 	color:#ddd;
 	text-align: center;
 	background-color: rgb(41,41,41);
-	justify-content: center;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	margin-top: 5px;
-	margin-bottom: 5px;
 	font-size: 80%;
+	border-color: black;
 }
 
 /* Estilos para la tabla */
@@ -129,13 +146,12 @@ th {
 .content {
 	color: white;
 	text-align: center;
-	margin-top: 1%;
 	margin-bottom: 1%;
 	font-size: x-large;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 55vh;
+	min-height: 70vh;
 }
 
 .contact {
@@ -159,6 +175,7 @@ th {
 	width: 20%;
 	border-radius: 1rem;
 	margin: 0% 1% 1% 1%;
+	text-align: center;
 }
 
 .descripcion {
@@ -213,16 +230,19 @@ th {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
 
 }
 
 .footer {
-	margin-top: 2rem;
+	padding-top: 2rem;
 	margin-bottom: 1rem;
 	color: #ddd;
 	display: flex;
 	justify-content: center;
-	
+	text-align: center;
+
 }
 
 .contactomain {
@@ -329,52 +349,63 @@ th {
 	justify-content: center;
 }
 
-.productos {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.productofoto {
-	width: 20rem;
-	height: 12rem;
-}
-
-.producto {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	margin: 1rem;
-	
-}
-
-.productometa {
-	display: flex;
-	flex-direction: row;
-	font-size: large;
-	justify-content: space-between;
-	
-}
-
-.productotitulo {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-size: medium;
-}
-
-.precio {
-	font-size: larger;
-	color: #FFA31A;
-}
-
-.puntaje {
-	font-size: larger;
-	color:#333;
-}
-
 .naranja {
 	font-size: larger;
 	color: #FFA31A;
 }
+
+.lista {
+	margin-right: 10%;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(max(195px,Xvw), 2fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 1rem;
+}
+
+  .card-img-top {
+	height: 300px;
+	object-fit: cover;
+  }
+
+  .titulo {
+	color: #FFA31A;
+	background-color: rgb(14,14,14);
+  }
+
+  .antisalto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: x-large;
+	font-weight: bolder;
+	background-color: rgb(14,14,14);
+  }
+
+.card{
+	border: 2px solid #FFA31A;
+	background-color: #b6b6b6 !important;
+	color: white;
+	margin-top: 1%;
+	}
+
+.card-body{
+	background-color: rgb(14,14,14);
+	}
+
+.card-text {
+	color: #FFA31A;
+	background-color: rgb(14,14,14);
+	}
+
+.gris {
+	background-color: rgb(14,14,14);
+	}
+	
+
+.content {
+	padding-top: 10px;
+	}
+
+
