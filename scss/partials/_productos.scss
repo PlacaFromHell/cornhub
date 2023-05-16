@@ -1,0 +1,48 @@
+.lista {
+	margin-right: 10%;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(max(195px,Xvw), 2fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 1rem;
+}
+
+  .card-img-top {
+	height: 300px;
+	object-fit: cover;
+  }
+
+  .titulo {
+	color: $naranja;
+	background-color: $gris-oscuro;
+  }
+
+  .antisalto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: x-large;
+	font-weight: bolder;
+	background-color: $gris-oscuro;
+  }
+
+.card{
+	border: 2px solid $naranja;
+	background-color: $gris-claro !important;
+	color: white;
+	margin-top: 1%;
+	}
+
+.card-body{
+	background-color: $gris-oscuro;
+	}
+
+.card-text {
+	color: $naranja;
+	background-color: $gris-oscuro;
+	}
+
+.gris {
+	background-color: $gris-oscuro;
+	}

@@ -1,0 +1,105 @@
+.contactomain {
+	list-style-type: none;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.contactoform {
+	list-style-type: none;
+	list-style: none;
+	background-color:$gris-medio;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	text-align: left;
+	margin-left: 2rem;
+	height: 110%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	border-radius: 1rem;
+	border-style: inset;
+	border-width: 1px;
+	border-color: $naranja;
+}
+
+.relleno {
+	background-color: $gris-medio;
+}
+
+.contactoheader {
+	font-size: large;
+	color: $naranja;
+	font-style: italic;
+	background-color: $gris-medio;
+	margin-bottom: 1rem;
+}
+
+.contactoformlabel {
+	font-size: medium;
+	background-color: $gris-medio;
+	color:white;
+}
+
+.contactobarra {
+	color: #ddd;
+	background-color: black;
+	padding-left: 2%;
+	border-style: none;
+	border-radius: 5px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	width: 20rem;
+	resize: none;
+
+    &:focus {
+        border-style: none;
+        outline: none;
+    }
+}
+
+
+
+.contactoboton {
+	background-color: $naranja;
+	color: black;
+	border-style: none;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	font-size: large;
+}
+
+
+.contactobox {
+	list-style-type: none;
+	list-style: none;
+
+}
+
+.contactoicono {
+	margin-top: 2rem;
+	width: 3rem;
+}
+
+.contactohead {
+	font-size: large;
+	color: $naranja;
+	margin-bottom: 1rem;
+}
+
+.contactoinfo {
+	font-size: medium;
+}
+
+.alineador {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

@@ -1,0 +1,8 @@
+.pica {
+    @extend .pic;
+	transition: 500ms;
+    transition-timing-function: ease;
+    &:hover {
+        width: 50%;
+    }
+}

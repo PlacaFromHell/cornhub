@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: Helvetica;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+.content {
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.header {
+  color: #ddd;
+  text-align: center;
+}
+
+.logo {
+  border-color: rgb(14, 14, 14);
+  background-color: rgb(14, 14, 14);
+  width: 10rem;
+  max-width: 30vw;
+  margin-left: 8vw;
+  margin-right: 10px;
+}
+
+.auxbar {
+  border-color: rgb(14, 14, 14);
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.buscador {
+  background-color: rgb(14, 14, 14);
+  justify-content: center;
+  padding-left: 2%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.boton {
+  background-color: #FFA31A;
+  border-style: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.barra {
+  color: #ddd;
+  background-color: rgb(41, 41, 41);
+  justify-content: center;
+  padding-left: 5%;
+  border-style: none;
+  border-radius: 2px;
+  width: 200%;
+  min-width: 40vw;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.barra:focus {
+  border-style: none;
+  outline: none;
+}
+
+.navegacion {
+  margin-top: 1px;
+  background-color: rgb(14, 14, 14);
+  overflow: hidden;
+  width: 100%;
+  padding-left: 9%;
+  padding-right: 5%;
+  font-family: Helvetica !important;
+}
+.navegacion a {
+  float: left;
+  color: #ddd;
+  text-align: left;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgb(14, 14, 14);
+  font-family: Helvetica !important;
+  font-weight: bold;
+}
+.navegacion a:hover {
+  background-color: #FFA31A;
+  color: black;
+}
+.navegacion form {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgb(14, 14, 14);
+  margin-right: 10%;
+}
+
+.atenc {
+  color: #ddd;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 5px;
+  font-size: 80%;
+  border-color: black;
+}
+
+.footer {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.redes {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact {
+  background-color: #FFA31A;
+  border-style: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  justify-content: center;
+  font-size: x-large;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pic, .pica {
+  width: 20%;
+  border-radius: 1rem;
+  margin: 0% 1% 1% 1%;
+  text-align: center;
+}
+
+.descripcion {
+  inline-size: 75%;
+  font-style: italic;
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.cajita {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  list-style-type: none;
+  font-size: medium;
+  text-overflow: ellipsis;
+  max-width: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.fecha {
+  font-size: small;
+}
+
+.comentario {
+  font-style: italic;
+  height: 5rem;
+}
+
+.usuario {
+  font-size: large;
+  color: #FFA31A;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.contactomain {
+  list-style-type: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contactoform {
+  list-style-type: none;
+  list-style: none;
+  background-color: rgb(41, 41, 41);
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin-left: 2rem;
+  height: 110%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  border-radius: 1rem;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #FFA31A;
+}
+
+.relleno {
+  background-color: rgb(41, 41, 41);
+}
+
+.contactoheader {
+  font-size: large;
+  color: #FFA31A;
+  font-style: italic;
+  background-color: rgb(41, 41, 41);
+  margin-bottom: 1rem;
+}
+
+.contactoformlabel {
+  font-size: medium;
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+.contactobarra {
+  color: #ddd;
+  background-color: black;
+  padding-left: 2%;
+  border-style: none;
+  border-radius: 5px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  width: 20rem;
+  resize: none;
+}
+.contactobarra:focus {
+  border-style: none;
+  outline: none;
+}
+
+.contactoboton {
+  background-color: #FFA31A;
+  color: black;
+  border-style: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: large;
+}
+
+.contactobox {
+  list-style-type: none;
+  list-style: none;
+}
+
+.contactoicono {
+  margin-top: 2rem;
+  width: 3rem;
+}
+
+.contactohead {
+  font-size: large;
+  color: #FFA31A;
+  margin-bottom: 1rem;
+}
+
+.contactoinfo {
+  font-size: medium;
+}
+
+.alineador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.naranja {
+  font-size: larger;
+  color: #FFA31A;
+}
+
+.lista {
+  margin-right: 10%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(195px, Xvw), 2fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+.card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titulo {
+  color: #FFA31A;
+  background-color: rgb(14, 14, 14);
+}
+
+.antisalto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: rgb(14, 14, 14);
+}
+
+.card {
+  border: 2px solid #FFA31A;
+  background-color: #b6b6b6 !important;
+  color: white;
+  margin-top: 1%;
+}
+
+.card-body {
+  background-color: rgb(14, 14, 14);
+}
+
+.card-text {
+  color: #FFA31A;
+  background-color: rgb(14, 14, 14);
+}
+
+.gris {
+  background-color: rgb(14, 14, 14);
+}
+
+.pica {
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+.pica:hover {
+  width: 50%;
+}/*# sourceMappingURL=styles.css.map */
