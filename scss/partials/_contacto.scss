@@ -1,11 +1,3 @@
-.contactomain {
-	list-style-type: none;
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-}
-
 .contactoform {
 	list-style-type: none;
 	list-style: none;
@@ -15,7 +7,7 @@
 	flex-direction: column;
 	justify-content: left;
 	text-align: left;
-	margin-left: 2rem;
+	margin: 2rem;
 	height: 110%;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -103,3 +95,11 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
+.contactomain {
+	list-style-type: none;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
