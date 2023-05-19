@@ -2,20 +2,16 @@
 	list-style-type: none;
 	list-style: none;
 	background-color:$gris-medio;
-	display: inline-block;
 	display: flex;
 	flex-direction: column;
-	justify-content: left;
 	text-align: left;
-	margin: 2rem;
-	height: 110%;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 1rem;
+	padding: 3%;
+	align-items: left;
 	border-radius: 1rem;
 	border-style: inset;
 	border-width: 1px;
 	border-color: $naranja;
+	margin: 1%;
 }
 
 .relleno {
@@ -72,7 +68,9 @@
 .contactobox {
 	list-style-type: none;
 	list-style: none;
-
+	justify-content: center;
+	padding: 0%;
+	margin: 1%;
 }
 
 .contactoicono {
@@ -99,7 +97,22 @@
 .contactomain {
 	list-style-type: none;
 	list-style: none;
+	padding: 0%;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.contentcontacto {
+	color: $blanco;
+	text-align: center;
+	margin-bottom: 1%;
+	font-size: x-large;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 70vh;
+	justify-items: center;
 }
 

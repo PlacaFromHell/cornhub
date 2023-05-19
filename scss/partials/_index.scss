@@ -11,7 +11,7 @@
 
 .gallery {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -30,43 +30,46 @@
 	margin-bottom: 1rem;
 }
 
-.testimonios {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	list-style-type: none;
-	margin-left: 5rem;
-	margin-right: 5rem;
+.parent {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
-
-.cajita {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	list-style-type: none;
-	font-size: medium;
-	text-overflow: ellipsis;
-	max-width: 20rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
-	margin-top: 1rem;
-}
-
-.fecha {
-	font-size: small;
-
-}
-
-.comentario {
+	
+.div1 { 
+	grid-area: 1 / 1 / 2 / 2; 
 	font-style: italic;
-	height: 5rem;
-
+	font-size: medium;
+	text-align: left;
+}
+.div2 { 
+	grid-area: 2 / 1 / 3 / 2; 
+	font-style: italic;
+	font-size: large;
+	align-content: end;
+	text-align: left;
+	max-width: 20rem;
 }
 
-.usuario {
-	font-size: large;
+.div3 { 
+	grid-area: 3 / 1 / 4 / 2; 
 	color: $naranja;
-	margin-left: 2rem;
-	margin-top: 1rem;
+	text-align: right;
+}
 
+.testimonioscontainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.testimonio {
+	margin: 1rem;
+	border: 1px;
+	padding: 1rem 2rem 1rem 2rem;
+	border-style: solid;
+	border-radius: 1%;
+	border-color: $gris-medio;
+	min-width: 30%;
 }

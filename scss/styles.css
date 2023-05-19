@@ -27,6 +27,11 @@ body {
   min-height: 70vh;
 }
 
+.title {
+  color: #ddd;
+  text-align: center;
+}
+
 .header {
   color: #ddd;
   text-align: center;
@@ -60,7 +65,7 @@ body {
 }
 
 .boton {
-  background-color: #FFA31A;
+  background-color: rgb(255, 144, 0);
   border-style: none;
   border-radius: 4px;
   padding: 5px 10px;
@@ -109,7 +114,7 @@ body {
   font-weight: bold;
 }
 .navegacion a:hover {
-  background-color: #FFA31A;
+  background-color: rgb(255, 144, 0);
   color: black;
 }
 .navegacion form {
@@ -150,7 +155,7 @@ body {
 }
 
 .contact {
-  background-color: #FFA31A;
+  background-color: rgb(255, 144, 0);
   border-style: none;
   border-radius: 4px;
   padding: 5px 10px;
@@ -162,7 +167,7 @@ body {
 
 .gallery {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -181,70 +186,65 @@ body {
   margin-bottom: 1rem;
 }
 
-.testimonios {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-  margin-left: 5rem;
-  margin-right: 5rem;
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.cajita {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  list-style-type: none;
-  font-size: medium;
-  text-overflow: ellipsis;
-  max-width: 20rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 1rem;
-}
-
-.fecha {
-  font-size: small;
-}
-
-.comentario {
+.div1 {
+  grid-area: 1/1/2/2;
   font-style: italic;
-  height: 5rem;
+  font-size: medium;
+  text-align: left;
 }
 
-.usuario {
+.div2 {
+  grid-area: 2/1/3/2;
+  font-style: italic;
   font-size: large;
-  color: #FFA31A;
-  margin-left: 2rem;
-  margin-top: 1rem;
+  align-content: end;
+  text-align: left;
+  max-width: 20rem;
 }
 
-.contactomain {
-  list-style-type: none;
-  list-style: none;
+.div3 {
+  grid-area: 3/1/4/2;
+  color: rgb(255, 144, 0);
+  text-align: right;
+}
+
+.testimonioscontainer {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonio {
+  margin: 1rem;
+  border: 1px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-style: solid;
+  border-radius: 1%;
+  border-color: rgb(41, 41, 41);
+  min-width: 30%;
 }
 
 .contactoform {
   list-style-type: none;
   list-style: none;
   background-color: rgb(41, 41, 41);
-  display: inline-block;
   display: flex;
   flex-direction: column;
-  justify-content: left;
   text-align: left;
-  margin-left: 2rem;
-  height: 110%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding: 3%;
+  align-items: left;
   border-radius: 1rem;
   border-style: inset;
   border-width: 1px;
-  border-color: #FFA31A;
+  border-color: rgb(255, 144, 0);
+  margin: 1%;
 }
 
 .relleno {
@@ -253,7 +253,7 @@ body {
 
 .contactoheader {
   font-size: large;
-  color: #FFA31A;
+  color: rgb(255, 144, 0);
   font-style: italic;
   background-color: rgb(41, 41, 41);
   margin-bottom: 1rem;
@@ -283,7 +283,7 @@ body {
 }
 
 .contactoboton {
-  background-color: #FFA31A;
+  background-color: rgb(255, 144, 0);
   color: black;
   border-style: none;
   border-radius: 5px;
@@ -297,6 +297,9 @@ body {
 .contactobox {
   list-style-type: none;
   list-style: none;
+  justify-content: center;
+  padding: 0%;
+  margin: 1%;
 }
 
 .contactoicono {
@@ -306,7 +309,7 @@ body {
 
 .contactohead {
   font-size: large;
-  color: #FFA31A;
+  color: rgb(255, 144, 0);
   margin-bottom: 1rem;
 }
 
@@ -320,9 +323,31 @@ body {
   justify-content: center;
 }
 
+.contactomain {
+  list-style-type: none;
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentcontacto {
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  justify-items: center;
+}
+
 .naranja {
   font-size: larger;
-  color: #FFA31A;
+  color: rgb(255, 144, 0);
 }
 
 .lista {
@@ -341,7 +366,7 @@ body {
 }
 
 .titulo {
-  color: #FFA31A;
+  color: rgb(255, 144, 0);
   background-color: rgb(14, 14, 14);
 }
 
@@ -356,7 +381,7 @@ body {
 }
 
 .card {
-  border: 2px solid #FFA31A;
+  border: 2px solid rgb(255, 144, 0);
   background-color: #b6b6b6 !important;
   color: white;
   margin-top: 1%;
@@ -367,7 +392,7 @@ body {
 }
 
 .card-text {
-  color: #FFA31A;
+  color: rgb(255, 144, 0);
   background-color: rgb(14, 14, 14);
 }
 
