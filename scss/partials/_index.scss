@@ -73,3 +73,91 @@
 	border-color: $gris-medio;
 	min-width: 30%;
 }
+
+.banner {
+	margin-top: 1px;
+	width: 100%;
+}
+
+
+
+
+.mysterybox {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 0.7fr repeat(2, 1fr) 0.5fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	width: 80%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	border: 1px;
+	border-style: solid;
+	border-color: $gris-medio;
+	}
+	
+.titularcaja { 
+	grid-area: 1 / 1 / 2 / 7; 
+	background: rgb(255,94,0);
+	background: linear-gradient(90deg, rgba(255,94,0,1) 48%, rgba(255,196,0,1) 100%);
+	text-align: left;
+	padding-left: 1rem;
+	display: flex;
+	align-items: center;
+	font-size: larger;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+.itemsscss {
+	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	font-size: large;
+}
+
+.item1caja { 
+	grid-area: 2 / 1 / 4 / 3; 
+	@extend .itemsscss;
+}
+.item2caja { 
+	grid-area: 2 / 3 / 4 / 5; 
+	@extend .itemsscss;
+}
+.item3caja { 
+	grid-area: 2 / 5 / 4 / 7; 
+	@extend .itemsscss;
+}
+
+.botoncaja { 
+	grid-area: 4 / 1 / 5 / 7; 
+	border: 0px;
+	border-top: 1px;
+	border-style: solid;
+	border-color: $gris-medio;
+	padding: 0.5rem;
+	text-align: right !important;
+	align-content: center !important;
+} 
+
+.botonmysterybox {
+	background: rgb(255,94,0);
+	background: linear-gradient(90deg, rgba(255,94,0,1) 48%, rgba(255,196,0,1) 100%);
+	border-style: none;
+	border-radius: 0.7rem;
+	padding: 3px 8px;
+	color: white;
+}
+
+.itemicono {
+	width: 5rem;
+	padding-bottom: 1rem;
+}
+
+
