@@ -14,7 +14,7 @@
 
   .titulo {
 	color: $naranja;
-	background-color: $gris-oscuro;
+	background-color: black;
   }
 
   .antisalto {
@@ -24,25 +24,34 @@
 	align-items: center;
 	font-size: x-large;
 	font-weight: bolder;
-	background-color: $gris-oscuro;
+	background-color: black;
   }
 
 .card{
-	border: 2px solid $naranja;
-	background-color: $gris-claro !important;
+	border: 2px solid $gris-oscuro;
+	border-radius: 0.5rem;
+	background-color: black;
 	color: white;
 	margin-top: 1%;
 	}
 
 .card-body{
-	background-color: $gris-oscuro;
+	background-color: black;
 	}
 
 .card-text {
 	color: $naranja;
-	background-color: $gris-oscuro;
+	background-color: black;
 	}
 
 .gris {
-	background-color: $gris-oscuro;
+	background-color: black;
 	}
+
+.containerflex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
